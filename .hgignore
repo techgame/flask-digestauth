@@ -1,0 +1,57 @@
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#~ Project ignores
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+syntax: glob 
+
+syntax: regexp 
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#~ Generally useful ignore configurations
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# zc.buildout preferences
+syntax: glob
+.buildout/*
+.mr.developer.cfg
+*.egg-info/*
+
+# auto-generated content
+syntax: glob 
+*.pyc
+*.pyo
+.noseids
+nosetests.xml
+
+# swap files of various origins
+syntax: glob 
+*.orig
+*~
+.*.swp
+.*.swo
+
+*.xcodeproj/*.mode1v3
+*.xcodeproj/*.pbxuser
+
+# Revision control dirs
+syntax: glob 
+\.hg/
+\.hg_archival.txt
+\.svn/
+CVS/
+
+# Various system generated files
+syntax: glob 
+Thumbs.db
+\.DS_Store
+
+
+syntax: regexp
+Icon\r
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#~ Concat Ignores
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+syntax: glob 
+
